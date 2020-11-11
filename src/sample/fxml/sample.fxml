@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #656565;">
+         <children>
+            <Text fill="WHITE" layoutX="30.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHECK YOUR HEALTH &amp; FITNESS CONDITION">
+               <font>
+                  <Font name="Bell MT" size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="500.0" fitWidth="200.0" layoutX="600.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/girl.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="500.0" fitWidth="200.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/man.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="200.0" layoutY="100.0" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="bFatButton" focusTraversable="false" layoutX="69.0" layoutY="402.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="262.0" style="-fx-border-color: silver; -fx-border-radius: 50; -fx-background-radius: 50;" text="Go To Calculator" textFill="#212121">
+               <font>
+                  <Font name="Bell MT" size="23.0" />
+               </font>
+            </Button>
+            <Text layoutX="60.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Body Fat Calculator can be used to estimate your total body fat based on specific measurements." textAlignment="CENTER" wrappingWidth="281.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text layoutX="79.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Calorie Calculator can be used to estimate the number of calories a person needs to consume each day." textAlignment="CENTER" wrappingWidth="262.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <Text layoutX="69.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Ideal Weight Calculator computes ideal bodyweight (IBW) ranges based on height, gender, and age." textAlignment="CENTER" wrappingWidth="281.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
